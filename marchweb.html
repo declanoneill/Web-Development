@@ -1,7 +1,9 @@
 <html>
 
-   
-<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -13,8 +15,6 @@
     messagingSenderId: "892826970225"
   };
   firebase.initializeApp(config);
-</script>
-
                 
         // Check to see if you are logged in
         firebase.auth().onAuthStateChanged(function(user) {
@@ -126,6 +126,8 @@
     </script>
 
     <body>
+        
+        
         <button onclick="signin()">Sign in</button>
         <button onclick="signout()">Sign out</button>
     
@@ -138,6 +140,9 @@
     <div id="mytweets"></div>
     <div id="mydata"></div>
     <div id="myphoto"></div>
+      
+        
+        
     </body>
 
     
